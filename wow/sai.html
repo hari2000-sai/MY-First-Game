@@ -1,0 +1,67 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      border: 2px solid black;
+      padding: 10px;
+      background: url(../wow/background.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100% ;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 500;
+      height: ; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+ </style>
+ </head> 
+<div class="row">
+  <div class="column">
+    <canvas id="mycanavas" width="500" height="500" name="box"></canvas>  
+  </div>
+  <div class="column2" name="left">
+    <canvas id="mycanavas2" width="500" height="500"></canvas>    
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+   <button id="kick" style="background: red">Kick</button>
+    <button id="punch" style="background-color: green">PUNCH</button>
+    <button id="block" style="background-color: violet">BLOCK</button>
+    <button id="forword">FORWORD</button>
+    <button id="backword">BACKWORD</button>
+  </div>
+  <div class="column" name="left">
+    <button id="kick2" style="background: red" name="k">Kick</button>
+    <button id="punch2" style="background-color: green">PUNCH</button>
+    <button id="block2" style="background-color: violet">BLOCK</button>
+    <button id="forword2">FORWORD</button>
+    <button id="backword2">BACKWORD</button>
+  </div>
+</div>
+<script type="text/javascript" src="main.js"></script>
+<script tyype="text/javascript" src="../sai/Untitled-2.js"></script>
+
+<audio controls loop style="margin-top: 20px" name="sai">
+  <source
+    src="../wow/WhatsApp Audio 2021-07-18 at 9.32.41 AM.mp3"
+    type="audio/ogg"
+  />
+  <source
+    src="../wow/WhatsApp Audio 2021-07-18 at 9.32.41 AM.mp3"
+    type="audio/mpeg"
+  />
+</audio>
+</body>
